@@ -2,7 +2,7 @@ class LugarTuristico {
   final String id;
   final String nombre;
   final String categoria;
-  final String imagenUrl;
+  final String imagenUrl; 
   final String descripcionCorta;
   final String descripcionLarga;
   final double calificacion;
@@ -22,39 +22,77 @@ class LugarTuristico {
   });
 }
 
-// Lista de datos ficticios (Mock Data)
+// Lista de destinos turísticos de México con imágenes locales 
 final List<LugarTuristico> listaLugares = [
+  // --- MONUMENTOS ---
   LugarTuristico(
     id: '1',
-    nombre: 'Centro Histórico Colonial',
+    nombre: 'Chichén Itzá',
     categoria: 'Monumentos',
-    imagenUrl: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2',
-    descripcionCorta: 'Hermosas calles empedradas y arquitectura colonial.',
-    descripcionLarga: 'Un recorrido fascinante por el corazón de la ciudad, lleno de historia, museos, iglesias centenarias y una oferta gastronómica tradicional inigualable.',
-    calificacion: 4.8,
-    duracionEstimada: '3 horas',
-    precio: 0.0,
+    imagenUrl: 'assets/images/chichen.jpg',
+    descripcionCorta: 'Maravilla del mundo antiguo en Yucatán.',
+    descripcionLarga: 'Explora la majestuosa zona arqueológica maya, destacando la imponente pirámide de Kukulcán, el juego de pelota y el cenote sagrado.',
+    calificacion: 4.9,
+    duracionEstimada: '4 horas',
+    precio: 25.0,
   ),
   LugarTuristico(
     id: '2',
-    nombre: 'Cascada Oculta del Bosque',
-    categoria: 'Natural',
-    imagenUrl: 'https://images.unsplash.com/photo-1432821596592-e2c18b78144f',
-    descripcionCorta: 'Naturaleza viva y pozas de agua cristalina.',
-    descripcionLarga: 'Una aventura ecoturística ideal para los amantes del senderismo. Disfruta de la flora local, aire puro y un refrescante baño en la cascada principal.',
-    calificacion: 4.9,
-    duracionEstimada: '5 horas',
-    precio: 15.0,
+    nombre: 'Palacio de Bellas Artes',
+    categoria: 'Monumentos',
+    imagenUrl: 'assets/images/bellas_artes.jpg',
+    descripcionCorta: 'Joyas arquitectónicas en el corazón de CDMX.',
+    descripcionLarga: 'El máximo recinto cultural de México, famoso por su arquitectura en mármol de Carrara y los murales de Diego Rivera y David Alfaro Siqueiros.',
+    calificacion: 4.8,
+    duracionEstimada: '2 horas',
+    precio: 5.0,
   ),
+
+  // --- NATURAL ---
   LugarTuristico(
     id: '3',
-    nombre: 'Playa de Arena Blanca',
-    categoria: 'Playas',
-    imagenUrl: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e',
-    descripcionCorta: 'Aguas turquesas y atardeceres inolvidables.',
-    descripcionLarga: 'Relájate bajo el sol en una de las playas más hermosas de la región. Ideal para practicar esnórquel, descansar y disfrutar de mariscos frescos.',
+    nombre: 'Cañón del Sumidero',
+    categoria: 'Natural',
+    imagenUrl: 'assets/images/sumidero.jpg',
+    descripcionCorta: 'Impresionante falla geológica en Chiapas.',
+    descripcionLarga: 'Un recorrido en lancha por el río Grijalva rodeado por paredes de roca de más de 1,000 metros de altura, hogar de una gran biodiversidad.',
+    calificacion: 4.9,
+    duracionEstimada: '3 horas',
+    precio: 18.0,
+  ),
+  LugarTuristico(
+    id: '4',
+    nombre: 'Cascadas de Agua Azul',
+    categoria: 'Natural',
+    imagenUrl: 'assets/images/agua_azul.jpg',
+    descripcionCorta: 'Pozas de tonalidades turquesas en la selva.',
+    descripcionLarga: 'Un paraíso natural formado por el río Asul, ideal para nadar, caminar por senderos rodeados de vegetación tropical y disfrutar de paisajes únicos.',
     calificacion: 4.7,
+    duracionEstimada: '5 horas',
+    precio: 10.0,
+  ),
+
+  // --- PLAYAS ---
+  LugarTuristico(
+    id: '5',
+    nombre: 'Playa Delfines (Cancún)',
+    categoria: 'Playas',
+    imagenUrl: 'assets/images/cancun.jpg',
+    descripcionCorta: 'Arena blanca y mar azul turquesa caribeño.',
+    descripcionLarga: 'Una de las playas más emblemáticas de Quintana Roo, perfecta para contemplar el atardecer, tomar fotos en el parador fotográfico y relajarse.',
+    calificacion: 4.9,
     duracionEstimada: 'Todo el día',
-    precio: 5.0,
+    precio: 0.0,
+  ),
+  LugarTuristico(
+    id: '6',
+    nombre: 'Playa Mazunte',
+    categoria: 'Playas',
+    imagenUrl: 'assets/images/mazunte.jpg',
+    descripcionCorta: 'Pueblo mágico costero y santuario de tortugas.',
+    descripcionLarga: 'Un destino bohemio en Oaxaca ideal para conectar con la naturaleza, surfear, disfrutar de la gastronomía local y visitar el Centro Mexicano de la Tortuga.',
+    calificacion: 4.8,
+    duracionEstimada: 'Todo el día',
+    precio: 0.0,
   ),
 ];

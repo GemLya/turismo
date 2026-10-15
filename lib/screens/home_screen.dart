@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.teal,
         actions: [
           IconButton(
-            icon: const Icon(Icons.person),
+            icon: const Icon(Icons.explore),
             onPressed: () {
               // Acción de perfil
             },
