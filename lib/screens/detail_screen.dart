@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../models/lugar_turistico.dart';
 
 class DetailScreen extends StatefulWidget {
@@ -25,7 +26,7 @@ class _DetailScreenState extends State<DetailScreen> {
               children: [
                 Hero(
                   tag: widget.lugar.id,
-                  child: Image.network(
+                  child: Image.asset(
                     widget.lugar.imagenUrl,
                     height: 300,
                     width: double.infinity,
@@ -53,7 +54,7 @@ class _DetailScreenState extends State<DetailScreen> {
                 children: [
                   // Título y Categoría
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween, 
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Expanded(
                         child: Text(
@@ -89,11 +90,21 @@ class _DetailScreenState extends State<DetailScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      _buildInfoItem(Icons.star, '${widget.lugar.calificacion}', 'Calificación'),
-                      _buildInfoItem(Icons.access_time, widget.lugar.duracionEstimada, 'Duración'),
+                      _buildInfoItem(
+                        Icons.star,
+                        '${widget.lugar.calificacion}',
+                        'Calificación',
+                      ),
+                      _buildInfoItem(
+                        Icons.access_time,
+                        widget.lugar.duracionEstimada,
+                        'Duración',
+                      ),
                       _buildInfoItem(
                         Icons.attach_money,
-                        widget.lugar.precio == 0 ? 'Gratis' : '\$${widget.lugar.precio}',
+                        widget.lugar.precio == 0
+                            ? 'Gratis'
+                            : '\$${widget.lugar.precio}',
                         'Precio',
                       ),
                     ],
@@ -108,7 +119,11 @@ class _DetailScreenState extends State<DetailScreen> {
                   const SizedBox(height: 8),
                   Text(
                     widget.lugar.descripcionLarga,
-                    style: TextStyle(fontSize: 15, color: Colors.grey[700], height: 1.4),
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.grey[700],
+                      height: 1.4,
+                    ),
                   ),
                   const SizedBox(height: 30),
 
@@ -125,7 +140,9 @@ class _DetailScreenState extends State<DetailScreen> {
                       ),
                       onPressed: () {
                         ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(content: Text('¡Reserva realizada con éxito!')),
+                          const SnackBar(
+                            content: Text('¡Reserva realizada con éxito!'),
+                          ),
                         );
                       },
                       child: const Text(
@@ -148,7 +165,10 @@ class _DetailScreenState extends State<DetailScreen> {
       children: [
         Icon(icon, color: Colors.teal, size: 28),
         const SizedBox(height: 4),
-        Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+        Text(
+          title,
+          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+        ),
         Text(subtitle, style: TextStyle(color: Colors.grey[600], fontSize: 12)),
       ],
     );
