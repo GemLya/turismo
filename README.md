@@ -1,6 +1,14 @@
 # turismo
 
-A new Flutter project.
+Capturas:
+
+<img width="1280" height="520" alt="Captura de pantalla 2026-10-14 222227" src="https://github.com/user-attachments/assets/0a146b4a-881a-41bd-95ba-63f8f28b2ab9" />
+<img width="1262" height="338" alt="image" src="https://github.com/user-attachments/assets/1e7b6699-c859-4f98-96e2-c8aeeb055b88" />
+
+<img width="1278" height="818" alt="image" src="https://github.com/user-attachments/assets/fd1e06f6-fe1c-4c5f-9428-9973116db5e7" />
+
+
+
 
 ## Getting Started
 
